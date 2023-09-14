@@ -1,0 +1,7 @@
+spring:
+  config:
+    import: 'optional:configserver:'
+  profiles:
+    active: dev
+application:
+  message: This is the local configurataion
