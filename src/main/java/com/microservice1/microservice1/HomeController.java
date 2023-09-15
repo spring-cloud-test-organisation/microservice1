@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @Value("${spring.profiles.active}")
+    @Value("${application.message}")
     private String activeProfile;
 
     @GetMapping("/")
