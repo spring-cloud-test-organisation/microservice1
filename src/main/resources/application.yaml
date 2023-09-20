@@ -1,7 +1,10 @@
 spring:
+  application:
+    name: microservice1
   config:
     import: 'optional:configserver:'
   profiles:
-    active: dev
+    active: uat
 application:
   message: This is the local configurataion
+
