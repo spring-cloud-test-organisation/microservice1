@@ -1,0 +1,11 @@
+vendor-a:
+  url: https://vendor-a.local/
+  password: 'local-pass'
+
+vendor-b:
+  url: https://vendor-b.local/
+  password: 'dev-pass'
+
+caches: # Reduce TTL of all caches to 5s
+  time-to-live: 5
+  customers.time-to-live: 5

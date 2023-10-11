@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources:
+            - name: mg-test-kv
+              endpoint: https://kv-mffrontend-d-we-001.vault.azure.net/
+              credentials:
+                managed-identity-enabled: true
+                client-id: 65fd9417-5181-4d8b-9e6e-5afe8ae61de7
+  profiles:
+    active: uat
+    include: common
+  config:
+    import: "optional:configserver:"
+
+
+vendor-wise.url: local
